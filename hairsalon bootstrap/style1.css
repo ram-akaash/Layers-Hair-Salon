@@ -1,0 +1,337 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #F1F5F8;
+	background-color:#18122B;
+}
+
+#page
+{
+
+
+  display: block;
+  height:auto;
+  position: relative;
+  overflow: hidden;
+
+}
+
+
+#header
+{
+background-color:#393053;
+
+width:2000px;
+
+
+}
+
+#titles
+{
+
+
+  margin-bottom: 20px;
+}
+
+#headerTitle
+{
+position:relative;
+margin-top: 20px;
+margin-left: 40px;
+color:#FAC213;
+text-align:left;
+font-size:40px;
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.headerSubText
+{
+position:relative;
+margin-left: 40px;
+color:#FAC213;
+text-align:left;
+font-size:16px;
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.logo
+{
+  margin-top: 20px;
+	margin-left: 40px;
+
+}
+
+.navbar{
+	background: #443C68;
+	text-align: center;
+}
+
+.navbar ul li
+{
+    background: #443C68;
+    text-align: center;
+		color: #fff;
+}
+.navbar .dropdown-menu
+{
+	background:#443C68;
+	z-index: 10;
+}
+
+
+
+.back {
+  background-image: url("pexels-thgusstavo-santana-1813272.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+background-image
+{
+	opacity: 0.5;
+}
+
+#picture
+{
+	max-width: 100%;
+	height: auto;
+	
+}
+
+.banner
+{
+	margin-right: 400px;
+	margin-left: 400px;
+	position:block;
+	font-style: italic;
+	font-family: cursive;
+
+
+}
+
+.banner h1
+{
+	position:relative;
+	font-size: 60px;
+	line-height: 88px;
+	text-align: center;
+	color:#FAC213;
+	display:flex;
+
+}
+
+.banner a
+{
+	position:relative;
+	font-size: 60px;
+	line-height: 88px;
+	text-align: center;
+	color:black;
+	display:flex;
+}
+
+.bannerpic
+{
+	position:relative;
+	height : 500px;
+	width : 400px;
+}
+
+
+.banele p
+{
+	position:relative;
+	font-size:30px;
+	color:#030712;
+	line-height:30px;
+	font-style: oblique;
+	text-align: center;
+}
+
+
+.container{
+    width: auto;
+    height: auto;
+    background: #030712;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 6%;
+    justify-content: space-around;
+
+}
+
+.container a{
+	text-decoration: none;
+	margin: auto;
+	margin-left: 50px;
+}
+
+
+.post-content p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.box{
+    width: 90%;
+    height: auto;
+    background: white;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    font-size: 19px;
+    border: black 3px solid;
+
+}
+
+
+.contentTitle
+{
+
+width:680px;
+height:37px;
+margin-top:500px;
+margin: auto;
+
+
+background-color:#393053;
+
+}
+
+.contentTitle h1
+{
+margin-left:21px;
+
+padding-top:8px;
+font-size:17px;
+font-weight:bold;
+color:#071027;
+
+}
+
+.comments
+{
+font-size:11px;
+font-style:italic;
+}
+
+.contentText
+{
+background-color:#635985;
+width:680px;
+margin: auto;
+padding-left:30px;
+padding-right:30px;
+font-size:13px;
+color:#030712;
+line-height:30px;
+}
+
+
+
+* {
+  box-sizing: border-box
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password], input[type=date] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  /*background: #f1f1f1;*/
+	color: gray;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  /*background-color: pink;*/
+  outline: none;
+	color: black;
+}
+
+.book hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.book button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.book button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.book .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.book .cancelbtn {
+
+  border-radius: 20px;
+  width: 20%;
+  margin-left: 17%;
+}
+.book .signupbtn{
+  border-radius: 20px;
+  width: 20%;
+  margin-left: 25%;
+}
+
+/* Add padding to container elements */
+.book .container {
+  padding: 100px;
+  margin: 2% 20% 2%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ddd;
+
+}
+
+/* Clear floats */
+.book .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+.book{
+@media screen and (max-width: 200px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+}
+
+.book .container label .gen{
+  padding-top: 20px;
+  align-items: flex-start;
+
+
+}

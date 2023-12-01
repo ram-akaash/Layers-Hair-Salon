@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Layers Family Salon</title>
+
+<script>
+function start()
+{
+document.getElementById("move").addEventListener("mousemove", moveone, false );
+document.getElementById("move").addEventListener("mouseout", leaveone, false );
+}
+
+function moveone()
+{
+document.getElementById("move").innerHTML ="WE SELL EXPERIENCES.";
+}
+
+function leaveone()
+{
+document.getElementById("move").innerHTML ="WE DON'T SELL HAIRCUTS.";
+}
+window.addEventListener( "load", start, false );
+</script>
+
+</head>
+
+<body>
+    <div id="page">
+
+      <div class="row" id="header">
+        <div class="col-md-7" id="titles">
+          <div id="headerTitle">Layers Family Salon</div>
+
+          <div class="headerSubText" id="move">WE DON'T SELL HAIRCUTS.</div>
+        </div>
+        <div class="col-md-5" id="titles">
+          <img class="logo" src="D:\HTML\hair salon\Logo - Layer.png"  width="150" height="75" alt="Layer logo">
+        </div>
+      </div>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index1.html">HOME</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-center">
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="offers.html">OFFERS<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="offers.html">DEAL OF THE DAY</a></li>
+                    <li><a href="offers.html">COMBO OFFERS</a></li>
+                    <li><a href="offers.html">FESTIVAL OFFERS</a></li>
+                  </ul>
+                </li>
+                <li><a href="index.html">SERVICES</a></li>
+
+                <li><a href="about.html"><i class="fa fa-user"></i>ABOUT US</a></li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="book.html">BOOK NOW</a></li>
+
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+
+          <div class="services">
+            <div class="container">
+
+        <div class="box">
+            <h2 class="title">
+                <img width="350" class="img-fluid" id="picture" src="download (1).jfif">
+                <a href="book.html" rel="bookmark" id="pink" class="HAIR CUT Rs.300">HAIR CUT</a>
+            </h2>
+
+        </div>
+        <div class="box">
+            <h2 class="title">
+                <img width="350" class="img-fluid" id="picture" src="download (2).jfif">
+                <a href="book.html" rel="bookmark" id="pink" class="HAIR COLOUR Rs.500">HAIR COLOUR</a>
+            </h2>
+
+        </div>
+        <div class="box">
+            <h2 class="title">
+                <img width="350" class="img-fluid" id="picture" src="download (3).jfif">
+                <a href="book.html" rel="bookmark" id="pink" class="HAIR STRAIGHTENING Rs.3000">HAIR STRAIGHTENING</a>
+            </h2>
+
+        </div>
+        <div class="box">
+            <h2 class="title">
+                <img width="350" class="img-fluid" id="picture" src="images.jfif">
+                <a href="book.html" rel="bookmark" id="pink" class="BEARD TRIMMING Rs.100">BEARD TRIMMING</a>
+            </h2>
+
+        </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+        <div id="footer"></div>
+</body>
+</html>

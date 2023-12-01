@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr
+{
+  background-color: #A2A2D0;
+  font-size: 13px;
+  font-weight:bold;
+  font-family:Arial, sans-serif;
+}
+
+th {
+
+  background-color:#393053;
+  font-size: 20px;
+  font-weight:bold;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+</style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Layers Family Salon</title>
+<script>
+function start()
+{
+document.getElementById("move").addEventListener("mousemove", moveone, false );
+document.getElementById("move").addEventListener("mouseout", leaveone, false );
+}
+
+function moveone()
+{
+document.getElementById("move").innerHTML ="WE SELL EXPERIENCES.";
+}
+
+function leaveone()
+{
+document.getElementById("move").innerHTML ="WE DON'T SELL HAIRCUTS.";
+}
+window.addEventListener( "load", start, false );
+</script>
+</head>
+
+<body>
+    <div id="page">
+
+      <div class="row" id="header">
+        <div class="col-md-7" id="titles">
+          <div id="headerTitle">Layers Family Salon</div>
+
+          <div class="headerSubText" id="move">WE DON'T SELL HAIRCUTS.</div>
+        </div>
+        <div class="col-md-5" id="titles">
+          <img class="logo" src="D:\HTML\hair salon\Logo - Layer.png"  width="150" height="75" alt="Layer logo">
+        </div>
+      </div>
+
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index1.html">HOME</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-center">
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="offers.html">OFFERS<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="offers.html">DEAL OF THE DAY</a></li>
+                    <li><a href="offers.html">COMBO OFFERS</a></li>
+                    <li><a href="offers.html">FESTIVAL OFFERS</a></li>
+                  </ul>
+                </li>
+                <li><a href="index.html">SERVICES</a></li>
+
+                <li><a href="about.html"><i class="fa fa-user"></i>ABOUT US</a></li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="book.html">BOOK NOW</a></li>
+
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+
+
+
+
+      </div>
+        <div class="contentTitle" style="margin-left:0px;width:100%;"><h1>UPCOMING OFFERS</h1></div>
+        <div style="margin:auto;margin-top:20px;">
+        <table id="tables" class="table-responsive-md">
+          <tr>
+            <th class="thead-dark">Category</th>
+            <th>Beauty Services</th>
+            <th>Offers</th>
+
+          </tr>
+          <tr>
+            <td>Womens Facial</td>
+            <td>Premium Facial</td>
+            <td>Upto Rs.100 off</td>
+
+          </tr>
+          <tr>
+            <td>Hair Styling</td>
+            <td>Haircut</td>
+            <td>Only Rs.300</td>
+
+          </tr>
+          <tr>
+            <td>Bridal Work</td>
+            <td>Bridal Makeup</td>
+            <td>Full Combo for Rs.10000</td>
+
+          </tr>
+
+        </table>
+        </div>
+
+        <div class="contentTitle" style="margin-left:0px;width:100%;"><h1>COMBO OFFERS</h1></div>
+        <div style="margin:auto; margin-top: 20px; width:100%;">
+
+          <table id="tables" class="table-responsive-md">
+            <tr>
+              <th class="thead-dark">Category</th>
+              <th>Beauty Services</th>
+              <th>Offers</th>
+
+            </tr>
+            <tr>
+              <td>Hair cut</td>
+              <td>Beard trim</td>
+              <td>Only Rs.300</td>
+
+            </tr>
+            <tr>
+              <td>Haircut</td>
+              <td>Detan treatment</td>
+              <td>Only Rs.500</td>
+
+            </tr>
+            <tr>
+              <td>Waxing</td>
+              <td>Manicure</td>
+              <td>Combo for Rs.2000</td>
+
+            </tr>
+
+          </table>
+
+        </div>
+
+</div>
+        <div id="footer"></div>
+</body>
+</html>

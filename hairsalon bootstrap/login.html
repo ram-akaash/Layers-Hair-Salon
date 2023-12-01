@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script type="text/javascript" src="D:\HTML\hairsalon bootstrap\external.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Layers Family Salon</title>
+<script type="text/javascript">
+
+function validateform(){
+
+var x=document.myform2.email.value;
+var atposition=x.indexOf("@");
+var dotposition=x.lastIndexOf(".");
+var password1=document.myform2.password1.value;
+
+var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+  alert("Please enter a valid e-mail address");
+  return false;
+}
+else if (password1 == "") {
+  alert("Please enter your password");
+
+  return false;
+}
+else if(regex.test(password1) == false){
+    alert("Please enter a valid pwd");
+		return false;
+}
+else{
+  return true;
+}
+
+}
+
+
+
+
+  function start()
+	{
+	document.getElementById("move").addEventListener("mousemove", moveone, false );
+	document.getElementById("move").addEventListener("mouseout", leaveone, false );
+	}
+
+	function moveone()
+	{
+	document.getElementById("move").innerHTML ="WE SELL EXPERIENCES.";
+	}
+
+	function leaveone()
+	{
+	document.getElementById("move").innerHTML ="WE DON'T SELL HAIRCUTS.";
+	}
+	window.addEventListener( "load", start, false );
+</script>
+
+
+</head>
+
+<body>
+    <div id="page">
+
+      <div class="row" id="header">
+        <div class="col-md-7" id="titles">
+          <div id="headerTitle">Layers Family Salon</div>
+
+          <div class="headerSubText" id="move">WE DON'T SELL HAIRCUTS.</div>
+        </div>
+        <div class="col-md-5" id="titles">
+          <img class="logo" src="D:\HTML\hair salon\Logo - Layer.png"  width="150" height="75" alt="Layer logo">
+        </div>
+      </div>
+
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index1.html">HOME</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-center">
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="offers.html">OFFERS<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="offers.html">DEAL OF THE DAY</a></li>
+                    <li><a href="offers.html">COMBO OFFERS</a></li>
+                    <li><a href="offers.html">FESTIVAL OFFERS</a></li>
+                  </ul>
+                </li>
+                <li><a href="index.html">SERVICES</a></li>
+
+                <li><a href="about.html"><i class="fa fa-user"></i>ABOUT US</a></li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="book.html">BOOK NOW</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+
+
+          <div class="book">
+
+
+<form name="myform2" id="myform2" method="post" action="" onsubmit="return validateform()">
+    <div class="container">
+        <h1>Login</h1>
+        <p>Layers account</p>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email">
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" name="password1">
+
+        <br>
+        <br>
+
+        <br>
+        <br>
+
+
+        <p>Don't have an account.<a href="signup.html" style="color:dodgerblue">SIGN UP</a></p>
+
+        <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <a href="book.html"><button type="submit" class="booknow" value="register" formaction="http://localhost:3600/login">SIGN UP</button></a>
+        </div>
+
+
+    </div>
+  </form>
+
+          </div>
+          </html>

@@ -1,0 +1,40 @@
+<script type = "text/javascript">
+	window.addEventListener( "load", starts, false );
+
+	function starts()
+	{
+	document.getElementById("picture").addEventListener("mouseover", over, false );
+	document.getElementById("picture").addEventListener("mouseout", out, false );
+	}
+
+	function over()
+	{
+	 document.getElementById("picture").setAttribute( "src", "images.jfif");
+	}
+
+	function out()
+	{
+	document.getElementById("picture").setAttribute( "src", "download (1).jfif");
+	}
+
+  function mouseOver( e )
+{
+	//document.write(e.target.tagName);
+	if ( e.target.tagName.toLowerCase() == "a" )
+	{
+	e.target.setAttribute( "style","color: " + e.target.getAttribute( "id" ) );
+	}
+}
+
+function mouseOut( e )
+{
+	if ( e.target.tagName.toLowerCase() == "a" )
+	{
+	e.target.innerHTML = e.target.getAttribute( "class" );
+	}
+}
+
+document.addEventListener( "mouseover", mouseOver, false );
+document.addEventListener( "mouseout", mouseOut, false );
+
+</script>

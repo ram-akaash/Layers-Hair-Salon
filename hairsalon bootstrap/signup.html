@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<title>Layers Family Salon</title>
+<script type="text/javascript">
+
+function validateform(){
+var name=document.myform1.name.value;
+var x=document.myform1.email.value;
+var atposition=x.indexOf("@");
+var dotposition=x.lastIndexOf(".");
+var password1=document.myform1.password1.value;
+var password2=document.myform1.password2.value;
+var mobile=document.myform1.mobile.value;
+var expr = /^(0|91)?[6-9][0-9]{9}$/;
+var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+
+
+if (name==null || name==""){
+  alert("Name can't be blank");
+  return false;
+}
+else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+  alert("Please enter a valid e-mail address");
+  return false;
+}
+else if(mobile == "") {
+  alert("Please enter your mobile number");
+
+  return false;
+}
+
+
+else if(expr.test(mobile)==false)
+{
+    alert("Please enter valid mobile number.");
+    return false;
+}
+
+else if (password1 == "") {
+  alert("Please enter your password");
+
+  return false;
+}
+else if(password2 == "") {
+  alert("Please enter your password");
+
+  return false;
+}
+else if(password1 != password2){
+	alert("Password mismatch");
+  return false;
+}
+else if(regex.test(password1) == false){
+    alert("Please enter a valid pwd");
+		return false;
+}
+else{
+  return true;
+}
+
+}
+
+
+
+
+  function start()
+	{
+	document.getElementById("move").addEventListener("mousemove", moveone, false );
+	document.getElementById("move").addEventListener("mouseout", leaveone, false );
+	}
+
+	function moveone()
+	{
+	document.getElementById("move").innerHTML ="WE SELL EXPERIENCES.";
+	}
+
+	function leaveone()
+	{
+	document.getElementById("move").innerHTML ="WE DON'T SELL HAIRCUTS.";
+	}
+	window.addEventListener( "load", start, false );
+</script>
+</head>
+
+<body>
+    <div id="page">
+
+        <div class="row" id="header">
+          <div class="col-md-7" id="titles">
+            <div id="headerTitle">Layers Family Salon</div>
+
+            <div class="headerSubText" id="move">WE DON'T SELL HAIRCUTS.</div>
+          </div>
+          <div class="col-md-5" id="titles">
+            <img class="logo" src="D:\HTML\hair salon\Logo - Layer.png"  width="150" height="75" alt="Layer logo">
+          </div>
+        </div>
+
+
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index1.html">HOME</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-center">
+
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="offers.html">OFFERS<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="offers.html">DEAL OF THE DAY</a></li>
+                      <li><a href="offers.html">COMBO OFFERS</a></li>
+                      <li><a href="offers.html">FESTIVAL OFFERS</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="index.html">SERVICES</a></li>
+
+                  <li><a href="about.html"><i class="fa fa-user"></i>ABOUT US</a></li>
+                  <li><a href="contact.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+                  <li><a href="login.html">LOGIN</a></li>
+                  <li><a href="book.html">BOOK NOW</a></li>
+
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+
+
+
+            <form name="myform1" id="myform1" method="post" action="" onsubmit="return validateform()">
+            <div class="container" style="margin-bottom:150px;">
+              <h1>Sign Up</h1>
+              <p>Please fill in this form to Sign up.</p>
+              <hr>
+            <div class="form-group row">
+              <label for="usr" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="usr" class="col-sm-2 col-form-label">Mobile Number</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="password1" name="password1" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="password2" name="password2" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="form-group row">
+
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+            <p>By Sign up you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-success" formaction="http://localhost:3600/save">Sign in</button>
+              </div>
+            </div>
+          </div>
+          </form>
+
+
+
+
+
+    </div>
+        <div id="footer"></div>
+</body>
+</html>
